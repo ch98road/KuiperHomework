@@ -32,4 +32,4 @@
 *.app
 
 
-hw1/*/build
+hw*/*/build
