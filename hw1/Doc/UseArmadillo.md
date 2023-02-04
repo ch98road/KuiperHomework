@@ -5,7 +5,7 @@
 ```
 wget http://sourceforge.net/projects/arma/files/armadillo-11.4.3.tar.xz
 apt-get install libopenblas-dev liblapack-dev libarpack2-dev libsuperlu-dev
-tar -xf armadillo-11.4.3.tar.xz && cd armadillo-11.4.3.tar.xz
+tar -xf armadillo-11.4.3.tar.xz && cd armadillo-11.4.3
 mkdir build && cd build && cmake ..
 make -j8
 make install
