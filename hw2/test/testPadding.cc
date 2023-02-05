@@ -34,6 +34,7 @@ arma::fcube &Padding(arma::fcube data_, const std::vector<uint32_t> &pads, float
     if (DEBUG)
         LOG(INFO) << "new_cube \n"
                   << new_cube;
+    // -Wreturn-local-addr, 返回了local函数中声明的变量，所以会由这个warning，这个在实现中没有，只是单纯测试用
     return new_cube;
 }
 
