@@ -9,3 +9,7 @@
 ### 返回值
 - 引用/指针 ： https://blog.csdn.net/qq_28256407/article/details/120185762
 - 引用作为返回值就是返回变量时只返回变量地址，而指针作为返回值的作用是返回变量时必须返回地址（可被包成指针，如参考中的&temp_str）
+
+### auto 与 auto &
+- https://blog.csdn.net/artistkeepmonkey/article/details/106334555
+- 不加&则永远不会被推导为引用
