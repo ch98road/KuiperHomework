@@ -55,5 +55,4 @@
     add_executable(test_kuiper_course ${DIR_TEST})
     link_directories(/usr/local/lib/)
     target_link_libraries(test_kuiper_course ${link_lib})
-
 ```
