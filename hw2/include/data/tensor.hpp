@@ -61,6 +61,7 @@ namespace kuiper_infer
         void Flatten();
 
     private:
+        // 这玩意好像没怎么用到
         std::vector<uint32_t> raw_shapes_;
         arma::fcube data_;
     };

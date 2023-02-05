@@ -51,7 +51,7 @@
     find_package(GTest REQUIRED)
     find_package(glog 0.6.0 REQUIRED)
     aux_source_directory(../test DIR_TEST)
-    set(link_lib  glog::glog gtest pthread)
+    set(link_lib  glog::glog gtest gtest_main pthread)
     add_executable(test_kuiper_course ${DIR_TEST})
     link_directories(/usr/local/lib/)
     target_link_libraries(test_kuiper_course ${link_lib})
