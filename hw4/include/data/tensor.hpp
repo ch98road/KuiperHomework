@@ -37,6 +37,7 @@ namespace kuiper_infer
 
         bool empty() const;
         float index(uint32_t offset) const;
+        float index(uint32_t offset);
 
         std::vector<uint32_t> shapes() const;
         arma::fcube &data();

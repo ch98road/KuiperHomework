@@ -2,6 +2,7 @@
 #include "layer/relu_layer.hpp"
 #include "ops/relu_op.hpp"
 #include <glog/logging.h>
+#include "factory/layer_factory.hpp"
 
 namespace kuiper_infer
 {
@@ -42,5 +43,14 @@ namespace kuiper_infer
             outputs.push_back(input_data);
         }
     }
+
+    // 创建实例
+    std::shared_ptr<Layer> ReluLayer::CreateInstance(const std::shared_ptr<Operator> &op){
+        std::shared_ptr<Layer> relu_layer = std::make_shared<ReluLayer>(op);
+        return relu_layer;
+    }
+
+    // 注册算子
+    LayerRegisterWrapper kReluLayer(OpType::kOperatorRelu, ReluLayer::CreateInstance);
 
 }

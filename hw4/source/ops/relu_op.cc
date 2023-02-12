@@ -2,7 +2,7 @@
 namespace kuiper_infer
 {
 
-    explicit ReluOperator::ReluOperator(float thresh) : thresh_(thresh), Operator(OpType::kOperatorRelu)
+    ReluOperator::ReluOperator(float thresh) : thresh_(thresh), Operator(OpType::kOperatorRelu)
     {
     }
 

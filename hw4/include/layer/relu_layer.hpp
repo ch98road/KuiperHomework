@@ -21,6 +21,8 @@ namespace kuiper_infer
         // Forwards
         void Forwards(const std::vector<std::shared_ptr<Tensor<float>>> &inputs,
                       std::vector<std::shared_ptr<Tensor<float>>> &outputs) override;
+
+        static std::shared_ptr<Layer> CreateInstance(const std::shared_ptr<Operator> &op);
     };
 }
 
