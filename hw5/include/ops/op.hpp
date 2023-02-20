@@ -10,6 +10,7 @@ namespace kuiper_infer
         kOperatorUnknown = -1,
         kOperatorRelu = 0,
         kOperatorSigmoid = 1,
+        kOperatorMaxpooling = 1,
     };
 
     class Operator
