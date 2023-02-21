@@ -1,10 +1,6 @@
-## hw4
+## hw5
 
-- layer
-- 这里的具体设计应当是
-  - layer负责计算
-  - ops负责存储数据/参数
-  - factory负责注册layer？
+- 新增layer：sigmoid,maxpooling
 
 ### how 2 run test
 
