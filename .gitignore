@@ -32,3 +32,4 @@
 *.app
 
 hw*/*/build
+hw*/*/*/build

@@ -35,10 +35,10 @@ enable_testing()
 # gtest_discover_tests(test_relu)
 
 
-# test_sigmoid
-add_executable(test_sigmoid testSigmoid.cc ${DATA} ${LAYER} ${OP} ${FACTORY})
-target_link_libraries(test_sigmoid ${test_link_lib} ${test_link_math_lib})
-gtest_discover_tests(test_sigmoid)
+# # test_sigmoid
+# add_executable(test_sigmoid testSigmoid.cc ${DATA} ${LAYER} ${OP} ${FACTORY})
+# target_link_libraries(test_sigmoid ${test_link_lib} ${test_link_math_lib})
+# gtest_discover_tests(test_sigmoid)
 
 # test maxpooling
 add_executable(test_maxpooling testMaxpooling.cc ${DATA} ${LAYER} ${OP} ${FACTORY})

@@ -10,7 +10,7 @@ namespace kuiper_infer
     {
 
     private:
-        std::unique_ptr<MaxPoolingOp> op_;
+        std::unique_ptr<MaxPoolingOperator> op_;
 
     public:
         ~MaxPoolingLayer() override = default;

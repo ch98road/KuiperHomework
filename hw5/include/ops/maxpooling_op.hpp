@@ -3,6 +3,7 @@
 #define KUIPER_HW_INCLUDE_MAXPOOLING_OPS_OP_HPP_
 #include "op.hpp"
 #include <glog/logging.h>
+#include <cstdint>
 
 namespace kuiper_infer
 {
@@ -10,7 +11,7 @@ namespace kuiper_infer
     {
     public:
         ~MaxPoolingOperator() override = default;
-        explicit MaxPoolingOperator();
+        explicit MaxPoolingOperator(uint32_t pooling_h, uint32_t pooling_w, uint32_t stride_h, uint32_t stride_w, uint32_t padding_h, uint32_t padding_w);
 
         void set_pooling_h(uint32_t pooling_h);
         uint32_t get_pooling_h() const;
@@ -27,8 +28,8 @@ namespace kuiper_infer
         void set_padding_h(uint32_t padding_h);
         uint32_t get_padding_h() const;
 
-        void set_padding_2(uint32_t padding_2);
-        uint32_t get_padding_2() const;
+        void set_padding_w(uint32_t padding_w);
+        uint32_t get_padding_w() const;
 
     private:
         uint32_t pooling_h = 1;

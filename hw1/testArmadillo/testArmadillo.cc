@@ -10,5 +10,7 @@ int main(){
     LOG(INFO) << "in_1.n_cols:" << in_1.n_cols;
     LOG(INFO) << "in_1.n_rows:" << in_1.n_rows;
     LOG(INFO) << "in_1.size:" << in_1.size();
-    
+
+    arma::fcube y;
+    // LOG(INFO) << "y.n_slices : " << y.n_slices;
 }
